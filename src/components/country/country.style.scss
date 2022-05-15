@@ -1,0 +1,30 @@
+@import "src/assets/common";
+
+.country {
+  padding: 2em;
+  width: 14em;
+  display: grid;
+
+  .flag {
+    height: 1/2;
+    width: 100%;
+
+  }
+
+  .desc {
+
+    .name {
+      margin-bottom: 0.6em;
+      font-weight: $primary_font_weight_three;
+    }
+
+    .label2 {
+      font-weight: $primary_font_weight_two;
+    }
+
+    .label2:not(:last-child) {
+      margin-bottom: 0.4em;
+    }
+
+  }
+}
