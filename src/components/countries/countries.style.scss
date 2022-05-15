@@ -1,0 +1,19 @@
+@import "src/assets/common";
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  .filter {
+    padding: 2em 0;
+
+    .dropdown {
+      float: right;
+
+      #select {
+        width: 9em !important;
+      }
+
+    }
+  }
+}

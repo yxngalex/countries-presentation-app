@@ -3,9 +3,29 @@
 #light {
   background-color: $white;
   color: $black;
+
+  .main {
+    background-color: $very_light_gray;
+    color: $black;
+  }
+
+  .field, #outlined-basic {
+    background-color: $white;
+    color: $black !important;
+  }
 }
 
 #dark {
   background-color: $dark_blue;
   color: $white;
+
+  .main {
+    background-color: $very_dark_blue;
+    color: $white;
+  }
+
+  .field, #outlined-basic {
+    background-color: $dark_blue;
+    color: $white !important;
+  }
 }
