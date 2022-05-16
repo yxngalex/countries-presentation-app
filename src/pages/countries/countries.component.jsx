@@ -27,7 +27,7 @@ const Countries = () => {
     }
 
     const filterByRegion = (region) => {
-        if (region === '') return;
+        if (region === ' ') return;
         getCountryByRegion(region).then(r => {
             setCountries(r);
         })
@@ -44,7 +44,7 @@ const Countries = () => {
                             <select className="field" id="select" onChange={v => filterByRegion(v.target.value)}>
                                 <option>Filter by Region</option>
                                 <option value="africa">Africa</option>
-                                <option value="america">America</option>
+                                <option value="americas">Americas</option>
                                 <option value="asia">Asia</option>
                                 <option value="europe">Europe</option>
                                 <option value="oceania">Oceania</option>
