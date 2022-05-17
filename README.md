@@ -1,6 +1,6 @@
 # Countries Rest Api with React
 
-This project is based of the Countries Rest Api challenge as done as an interview.
+This project is based of the Countries Rest Api done in ReactJs.
 
 ## Overview
 
