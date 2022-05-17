@@ -76,10 +76,30 @@
 
 @media (max-width: 1346px) {
   .details {
+    button {
+      height: 3em;
+      font-size: 10px;
+    }
+
     .container {
       .description {
         display: block;
         text-align: center;
+
+        .about {
+          display: block;
+          padding-top: 2em;
+          text-align: left;
+
+          .more {
+            text-align: left;
+            display: block;
+
+            span {
+              margin: 2em 0;
+            }
+          }
+        }
 
         .flag {
           padding: 0;
