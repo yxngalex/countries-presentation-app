@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faMoon} from "@fortawesome/free-solid-svg-icons";
+import {faArrowLeftLong, faMoon} from "@fortawesome/free-solid-svg-icons";
 import {faSun} from "@fortawesome/free-solid-svg-icons";
 import * as fontawesome from "@fortawesome/fontawesome-svg-core";
 
@@ -34,7 +34,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 
-fontawesome.library.add(faMoon, faSun);
+fontawesome.library.add(faMoon, faSun, faArrowLeftLong);
 
 export default function Header({onClick, label}) {
     const classes = useStyles();

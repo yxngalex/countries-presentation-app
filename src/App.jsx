@@ -3,7 +3,7 @@ import Header from "./components/header/header.component";
 import React, {createContext, useState} from "react";
 import Countries from "./pages/countries/countries.component";
 import {Routes, Route} from 'react-router-dom';
-import CountryDetails from "./pages/details/country-details.component";
+import CountryDetails from "./pages/country-details/country-details.component";
 
 export const ThemeContext = createContext(null);
 
@@ -20,7 +20,7 @@ function App() {
                 <div className="app" id={theme}>
                     <Header onClick={toggleTheme} label={theme}/>
                     <Routes>
-                        <Route path="/details" element={<CountryDetails/>}/>
+                        <Route path="/about" element={<CountryDetails/>}/>
                         <Route exact path="/" element={<Countries/>}/>
                     </Routes>
                 </div>

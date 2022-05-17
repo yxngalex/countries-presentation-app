@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import "./countries.style.scss";
 import {TextField} from "@material-ui/core";
 import Country from "../../components/country/country.component";
@@ -54,7 +54,7 @@ const Countries = () => {
                 </div>
                 <div className="countries">
                     {
-                        countries.map((country, index) => <Link to={{pathname: 'details', state: country}} key={index}>
+                        countries.map((country, index) => <Link to="/about" state={country} key={index}>
                             <Country
                                 name={country.name}
                                 flag={country.flag}

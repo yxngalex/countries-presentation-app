@@ -1,0 +1,75 @@
+@import "src/assets/common";
+
+.details {
+  min-height: 100vh;
+
+  .container {
+    margin: 0 auto;
+  }
+
+  button {
+    margin-top: 3.5em;
+    width: 130px;
+    font-size: 12px;
+  }
+
+  .description {
+    margin: 4em auto;
+    padding: 8px;
+    display: flex;
+
+    .flag {
+      height: 22em;
+      object-fit: contain;
+      padding-right: 9em;
+      flex-direction: column;
+    }
+
+    .about {
+      flex-direction: column;
+
+      h2 {
+        font-weight: $primary_font_weight_three;
+      }
+
+      .more {
+        display: grid;
+        grid-gap: .5em;
+        grid-template-columns: 2fr 1fr;
+
+        span {
+          font-weight: $primary_font_weight_two;
+          display: flex;
+        }
+
+        .data {
+          font-weight: $primary_font_weight_one;
+          margin-left: .3em;
+        }
+      }
+
+      .border-countries {
+        margin-top: 1em;
+        display: flex;
+
+        .asd {
+          flex-direction: column;
+          margin-top: 3em;
+          margin-right: 1em;
+          display: flex;
+        }
+
+        .borders {
+          width: auto;
+          margin-right: 1em;
+          flex-direction: column;
+        }
+
+      }
+    }
+
+
+  }
+
+}
+

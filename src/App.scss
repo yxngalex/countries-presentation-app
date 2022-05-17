@@ -8,7 +8,7 @@
   background-color: $white;
   color: $black;
 
-  .main {
+  .main, .details {
     background-color: $very_light_gray;
     color: $black;
   }
@@ -23,7 +23,7 @@
   background-color: $dark_blue;
   color: $white;
 
-  .main {
+  .main, .details {
     background-color: $very_dark_blue;
     color: $white;
   }
