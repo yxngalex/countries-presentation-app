@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./countries.style.scss";
 import {TextField} from "@material-ui/core";
 import Country from "../../components/country/country.component";
@@ -19,7 +19,7 @@ const Countries = () => {
     }
 
     const searchCountry = (text) => {
-        if (text.length < 3 || text === '') {
+        if (text !== '') {
             getCountryByName(text).then(data => {
                 setCountries(data);
             })

@@ -1,21 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 
 import './country-details.style.scss';
 import Button from "@material-ui/core/Button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {Link, useLocation} from "react-router-dom";
-import {getCountryByCode} from "../../services/countries.service";
 
 const CountryDetails = () => {
     let location = useLocation();
     let state = location.state;
 
-    // Napraviti da se mogu pretrazivati zemlje po kodu!
-    if (state.length === 3) {
-        getCountryByCode(state).then(r => {
-            state = r;
-        });
-    }
 
     return (
         <div className="details">
@@ -53,16 +46,16 @@ const CountryDetails = () => {
                             </div>
                         </div>
                         <div className="border-countries">
-                            <div className="asd">Borders:</div>
+                            <div className="borders-label">Borders:</div>
                             {
-                                state?.borders?.map((bor, index) => <Link to='/about' state={bor} key={index}>
-                                    <Button
+                                state?.borders?.map((bor, index) => <Button
                                         color="default"
                                         className="field borders"
+                                        key={index}
                                     >
                                         {bor}
                                     </Button>
-                                </Link>)
+                                )
                             }
                         </div>
                     </div>

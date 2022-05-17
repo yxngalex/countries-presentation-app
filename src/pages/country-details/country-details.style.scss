@@ -2,6 +2,7 @@
 
 .details {
   min-height: 100vh;
+  overflow: auto;
 
   .container {
     margin: 0 auto;
@@ -50,9 +51,9 @@
 
       .border-countries {
         margin-top: 1em;
-        display: flex;
+        display: block;
 
-        .asd {
+        .borders-label {
           flex-direction: column;
           margin-top: 3em;
           margin-right: 1em;
@@ -73,3 +74,53 @@
 
 }
 
+@media (max-width: 1346px) {
+  .details {
+    .container {
+      .description {
+        display: block;
+        text-align: center;
+
+        .flag {
+          padding: 0;
+        }
+
+        .about {
+          .more {
+            text-align: left;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  .details {
+    .container {
+      .description {
+
+        .flag {
+          height: 14em;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .details {
+    .container {
+      .description {
+
+        .flag {
+          height: 10em;
+        }
+      }
+
+    }
+  }
+}

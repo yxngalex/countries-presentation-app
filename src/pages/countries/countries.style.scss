@@ -30,3 +30,42 @@
     grid-gap: 20px;
   }
 }
+
+
+@media (max-width: 1360px) {
+  .container {
+    .countries {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 1014px) {
+  .container {
+    .countries {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media (max-width: 661px) {
+  .container {
+    width: 100%;
+    text-align: center;
+
+    .filter {
+      .dropdown {
+        float: initial;
+        display: block;
+        margin-top: 2em;
+      }
+    }
+
+    .countries {
+      grid-template-columns: 1fr;
+      a {
+        margin: 0 auto;
+      }
+    }
+  }
+}
